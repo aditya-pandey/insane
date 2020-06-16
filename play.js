@@ -1,17 +1,17 @@
-setTimeout(()=>{
+setTimeout(() => {
     var preload = document.querySelector(".preload");
     var name = document.querySelector(".preload h2");
     var loader = document.querySelector(".loader");
     name.style.transform = "translateX(-500px)";
     loader.style.transform = "translateX(500px)";
-    name.style.opacity= "0";
-    loader.style.opacity= "0";
+    name.style.opacity = "0";
+    loader.style.opacity = "0";
     preload.style.opacity = "0";
-    setTimeout(function(){
+    setTimeout(function () {
         preload.style.display = "none";
     },
-    3000)
-},5000)
+        3000)
+}, 5000)
 
 const songInfo = [
     {
@@ -88,7 +88,6 @@ const progressDiv = document.getElementById("progress");
 const currentTimeIndicator = document.querySelector(".music-time__current");
 const leftTimeIndicator = document.querySelector(".music-time__last");
 
-
 let currentIndex = 0;
 
 nextButton.addEventListener("click", () => {
@@ -98,12 +97,14 @@ nextButton.addEventListener("click", () => {
         song.play();
         title.innerText = songInfo[currentIndex].name;
         record.style.backgroundImage = `url(${songInfo[currentIndex].background})`;
+        download.setAttribute("href", songInfo[currentIndex].url)
     }
     else if (currentIndex < 11) {
         song.src = songInfo[currentIndex + 1].url;
         song.play();
         title.innerText = songInfo[currentIndex + 1].name;
         record.style.backgroundImage = `url(${songInfo[currentIndex + 1].background})`;
+        download.setAttribute("href", songInfo[currentIndex + 1].url)
         currentIndex++;
     }
     playButton.classList.remove("play")
@@ -119,12 +120,14 @@ prevButton.addEventListener("click", () => {
         song.play();
         title.innerText = songInfo[currentIndex].name;
         record.style.backgroundImage = `url(${songInfo[currentIndex].background})`;
+        download.setAttribute("href", songInfo[currentIndex].url)
     }
     else if (currentIndex > 0) {
         song.src = songInfo[currentIndex - 1].url;
         song.play();
         title.innerText = songInfo[currentIndex - 1].name;
         record.style.backgroundImage = `url(${songInfo[currentIndex - 1].background})`;
+        download.setAttribute("href", songInfo[currentIndex - 1].url)
         currentIndex--;
     }
     playButton.classList.remove("play")
@@ -143,17 +146,22 @@ playButton.addEventListener("click", () => {
     }
     else if (playButton.className == "pause") {
         song.pause();
-        playButton.classList.remove("pause")
+        playButton.classList.remove("pause");
         playButton.classList.add("play");
         playButton.innerHTML = "<i class='fas fa-play'></i>";
         record.style.animationPlayState = "paused";
     }
 })
 
-song.addEventListener("paused", () => {
+song.addEventListener("waiting", () => {
     record.style.animationPlayState = "paused";
+    setTimeout(() => { record.style.animation = "spin 1.5s infinite forwards"; }, 2000)
 })
 
+// trying to fix playback issue
+
+
+// playback issue of animation
 song.addEventListener("ended", () => {
     record.style.animation = "none";
     playButton.innerHTML = "<i class='fas fa-play'></i>";
