@@ -97,14 +97,12 @@ nextButton.addEventListener("click", () => {
         song.play();
         title.innerText = songInfo[currentIndex].name;
         record.style.backgroundImage = `url(${songInfo[currentIndex].background})`;
-        download.setAttribute("href", songInfo[currentIndex].url)
     }
     else if (currentIndex < 11) {
         song.src = songInfo[currentIndex + 1].url;
         song.play();
         title.innerText = songInfo[currentIndex + 1].name;
         record.style.backgroundImage = `url(${songInfo[currentIndex + 1].background})`;
-        download.setAttribute("href", songInfo[currentIndex + 1].url)
         currentIndex++;
     }
     playButton.classList.remove("play")
@@ -120,14 +118,12 @@ prevButton.addEventListener("click", () => {
         song.play();
         title.innerText = songInfo[currentIndex].name;
         record.style.backgroundImage = `url(${songInfo[currentIndex].background})`;
-        download.setAttribute("href", songInfo[currentIndex].url)
     }
     else if (currentIndex > 0) {
         song.src = songInfo[currentIndex - 1].url;
         song.play();
         title.innerText = songInfo[currentIndex - 1].name;
         record.style.backgroundImage = `url(${songInfo[currentIndex - 1].background})`;
-        download.setAttribute("href", songInfo[currentIndex - 1].url)
         currentIndex--;
     }
     playButton.classList.remove("play")
