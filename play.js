@@ -159,10 +159,25 @@ song.addEventListener("waiting", () => {
 
 // playback issue of animation
 song.addEventListener("ended", () => {
-    record.style.animation = "none";
-    playButton.innerHTML = "<i class='fas fa-play'></i>";
-    playButton.classList.remove("pause")
-    playButton.classList.add("play");
+    if (currentIndex == 11) {
+        currentIndex = 0;
+        song.src = songInfo[currentIndex].url;
+        song.play();
+        title.innerText = songInfo[currentIndex].name;
+        record.style.backgroundImage = `url(${songInfo[currentIndex].background})`;
+    }
+    else if (currentIndex < 11) {
+        song.src = songInfo[currentIndex + 1].url;
+        song.play();
+        title.innerText = songInfo[currentIndex + 1].name;
+        record.style.backgroundImage = `url(${songInfo[currentIndex + 1].background})`;
+        currentIndex++;
+    }
+    playButton.classList.remove("play")
+    playButton.classList.add("pause");
+    playButton.innerHTML = "<i class='fas fa-pause'></i>";
+    record.style.animation = "spin 1.5s infinite forwards";
+
 })
 
 function changeBar() {
