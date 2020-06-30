@@ -1,105 +1,102 @@
 {
-    "dir": "ltr",
     "lang": "en",
     "name": "iNSANE The Rapper",
     "short_name": "iNSANE",
     "scope": "/",
-    "display": "browser",
+    "display": "standalone",
     "start_url": "https://insane.netlify.app/",
-    "background_color": "transparent",
-    "theme_color": "transparent",
+    "theme_color": "gray",
+    "background_color": "#f2f6f9",
     "description": "iNSANE the Rapper is a Hindi/English song writer, poet and rapper. ",
-    "orientation": "any",
-    "related_applications": [],
-    "prefer_related_applications": false,
+    "orientation": "portrait",
     "icons": [
         {
-            "src": "/images/b8088bf1-8807-6235-3266-ae879201b6b2.webPlatform.png",
+            "src": "images/b8088bf1-8807-6235-3266-ae879201b6b2.webPlatform.png",
             "sizes": "44x44",
             "type": "image/png"
         },
         {
-            "src": "/images/56b936c2-fa03-7c73-a1e5-02b75afdb25a.webPlatform.png",
+            "src": "images/56b936c2-fa03-7c73-a1e5-02b75afdb25a.webPlatform.png",
             "sizes": "48x48",
             "type": "image/png"
         },
         {
-            "src": "/images/fb261900-e8bf-53dd-6542-ee6f69d489c0.webPlatform.png",
+            "src": "images/fb261900-e8bf-53dd-6542-ee6f69d489c0.webPlatform.png",
             "sizes": "1240x600",
             "type": "image/png"
         },
         {
-            "src": "/images/48f1e629-c339-d3e6-b36c-5c1d767902cb.webPlatform.png",
+            "src": "images/48f1e629-c339-d3e6-b36c-5c1d767902cb.webPlatform.png",
             "sizes": "300x300",
             "type": "image/png"
         },
         {
-            "src": "/images/24d00a15-cc72-ffd4-2ff0-ef60c4fab8e9.webPlatform.png",
+            "src": "images/24d00a15-cc72-ffd4-2ff0-ef60c4fab8e9.webPlatform.png",
             "sizes": "150x150",
             "type": "image/png"
         },
         {
-            "src": "/images/afb47d7b-631d-334c-72a8-c978620ded82.webPlatform.png",
+            "src": "images/afb47d7b-631d-334c-72a8-c978620ded82.webPlatform.png",
             "sizes": "88x88",
             "type": "image/png"
         },
         {
-            "src": "/images/6affa3f9-13ff-7424-8908-f5b4ec1c00bc.webPlatform.png",
+            "src": "images/6affa3f9-13ff-7424-8908-f5b4ec1c00bc.webPlatform.png",
             "sizes": "24x24",
             "type": "image/png"
         },
         {
-            "src": "/images/03956157-2592-da1b-1ba9-b5a2e24f3e01.webPlatform.png",
+            "src": "images/03956157-2592-da1b-1ba9-b5a2e24f3e01.webPlatform.png",
             "sizes": "620x300",
             "type": "image/png"
         },
         {
-            "src": "/images/d9aae8b5-d59e-d79c-acd6-612f030215ae.webPlatform.png",
+            "src": "images/d9aae8b5-d59e-d79c-acd6-612f030215ae.webPlatform.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/images/868901c0-81ad-f0d5-fd26-e9c738dd3fb9.webPlatform.png",
+            "src": "images/868901c0-81ad-f0d5-fd26-e9c738dd3fb9.webPlatform.png",
             "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "/images/6a9c4f79-6422-3551-9d14-5acfc7ba5860.webPlatform.png",
+            "src": "images/6a9c4f79-6422-3551-9d14-5acfc7ba5860.webPlatform.png",
             "sizes": "96x96",
             "type": "image/png"
         },
         {
-            "src": "/images/a612b8a8-a271-01e5-b4ff-04f1eaf69cd0.webPlatform.png",
+            "src": "images/a612b8a8-a271-01e5-b4ff-04f1eaf69cd0.webPlatform.png",
             "sizes": "72x72",
             "type": "image/png"
         },
         {
-            "src": "/images/cc6b6b2f-8877-60a9-9869-22ad3e671c84.webPlatform.png",
+            "src": "images/cc6b6b2f-8877-60a9-9869-22ad3e671c84.webPlatform.png",
             "sizes": "36x36",
             "type": "image/png"
         },
         {
-            "src": "/images/4993d504-6d40-8e59-50a9-e2cf8c22fa42.webPlatform.png",
+            "src": "images/4993d504-6d40-8e59-50a9-e2cf8c22fa42.webPlatform.png",
             "sizes": "1024x1024",
             "type": "image/png"
         },
         {
-            "src": "/images/f2f2fe03-5d23-5d4c-5df9-80e7bd0bfa2f.webPlatform.png",
+            "src": "images/f2f2fe03-5d23-5d4c-5df9-80e7bd0bfa2f.webPlatform.png",
             "sizes": "180x180",
             "type": "image/png"
         },
         {
-            "src": "/images/e53bb987-85b9-0e56-b217-f673e9eb96b7.webPlatform.png",
+            "src": "images/e53bb987-85b9-0e56-b217-f673e9eb96b7.webPlatform.png",
             "sizes": "152x152",
             "type": "image/png"
         },
         {
-            "src": "/images/9ad02dc9-5fe0-6026-3144-c2a98d7388e0.webPlatform.png",
+            "src": "images/9ad02dc9-5fe0-6026-3144-c2a98d7388e0.webPlatform.png",
             "sizes": "120x120",
             "type": "image/png"
         },
         {
-            "src": "/images/469eab5c-8a1f-df07-ff99-f93761b71760.webPlatform.png",
+            "src": "images/469eab5c-8a1f-df07-ff99-f93761b71760.webPlatform.png",
             "sizes": "76x76",
             "type": "image/png"
         }
