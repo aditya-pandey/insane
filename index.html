@@ -1,116 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-145075360-3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145075360-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      gtag("config", "UA-145075360-3");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="iNSANE the Rapper is a Hindi/English song writer, poet and rapper."
+    />
+    <meta property="og:title" content="iNSANE The Rapper" />
+    <meta property="og:url" content=”https://insane.netlify.app" />
+    <meta property="og:description" content="iNSANE The Rapper" />
+    <meta
+      property="og:image"
+      content="images/fb261900-e8bf-53dd-6542-ee6f69d489c0.webPlatform.png"
+    />
+    <link rel="manifest" href="manifest.json" />
 
-  gtag('config', 'UA-145075360-3');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name=”description” content="iNSANE the Rapper is a Hindi/English song writer, poet and rapper.">
-<meta property=”og:title” content="iNSANE The Rapper" />
-<meta property=”og:url” content=”https://insane.netlify.app" /> 
-<meta property=”og:description” content="iNSANE The Rapper"> 
-<meta property=”og:image” content="images/fb261900-e8bf-53dd-6542-ee6f69d489c0.webPlatform.png">
-<link rel="manifest" href="manifest.json" />
-
-  <meta name="apple-mobile-web-app-status-bar" content="#aaaaaa" />
+    <meta name="apple-mobile-web-app-status-bar" content="#aaaaaa" />
     <meta name="theme-color" content="#aaaaaa" />
     <title>iNSANE The Rapper</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
 
-<body>
+  <body>
     <div class="preload">
-        <h2>iNSANE</h2>
-        <div class="loader">
-            <i class="fas fa-cog first"></i>
-            <i class="fas fa-cog second"></i>
-        </div>
+      <h2>iNSANE</h2>
+      <div class="loader">
+        <i class="fas fa-cog first"></i>
+        <i class="fas fa-cog second"></i>
+      </div>
     </div>
     <div class="container">
-        <div class="section-1">
-            <div class="player">
-                <div class="wrapper">
-                    <div class="player-inside">
-                        <audio src="https://insane.imfast.io/adhmara.mp3" preload="metadata"></audio>
-                        <h2>iNSANE</h2>
-                        <div class="record">
-                            <div class="play"><i class="fas fa-play"></i></div>
-                        </div>
-                        <div class="shadowy"></div>
-                        <div class="next-song swb"></div>
-                        <div class="prev-song swb"></div>
-                        <div class="song-detail">
-                            <div class="music-time">
-                                <p class="music-time__current"></p>
-                                <p class="music-time__last"></p>
-                            </div>
-                            <div class="progress" id="progress">
-                                <div id="length"></div>
-                            </div>
-                            <div class="song-title">Adhmara</div>
-                            <div class="song-artist">insane the Rapper</div>
-                        </div>
-                    </div>
+      <div class="section-1">
+        <div class="player">
+          <div class="wrapper">
+            <div class="player-inside">
+              <audio
+                src="https://insane.imfast.io/adhmara.mp3"
+                preload="metadata"
+              ></audio>
+              <h2>iNSANE</h2>
+              <div class="record">
+                <div class="play"><i class="fas fa-play"></i></div>
+              </div>
+              <div class="shadowy"></div>
+              <div class="next-song swb"></div>
+              <div class="prev-song swb"></div>
+              <div class="song-detail">
+                <div class="music-time">
+                  <p class="music-time__current"></p>
+                  <p class="music-time__last"></p>
                 </div>
+                <div class="progress" id="progress">
+                  <div id="length"></div>
+                </div>
+                <div class="song-title">Adhmara</div>
+                <div class="song-artist">insane the Rapper</div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="section-2">
-            <div class="section-3">
-                <div class="logo">
-                    Check On : <span><i class="fab fa-youtube"></i> YouTube</span>
-                </div>
-                <div class="sub">
-                    <div class="g-ytsubscribe" data-channelid="UCmIkhdsFMxDZ6Imipjr4rwA" data-layout="full"
-                        data-theme="dark" data-count="default"></div>
-                </div>
-                <div class="playlist">
-                    <span> <i class="fas fa-angle-double-right"></i> <a
-                            href="https://www.youtube.com/playlist?list=PLP9OVTwyJkxVOmAERFFzmeRaBrfnm0Bc-">KARMA 1 | 0
-                            EXPECTATION </a></span><br>
-                    <span> <i class="fas fa-angle-double-right"></i> <a
-                            href="https://www.youtube.com/playlist?list=PLP9OVTwyJkxWDOqD6dDuaVkVVyvzIDANc"> SINGLE
-                            TRACKS</a></span>
-                </div>
-            </div>
-            <div class="section-4">
-                <div class="icon">
-                    <a href="https://www.instagram.com/insane_the_rapper_/" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/insanetherapper94/" target="_blank"><i
-                            class="fab fa-facebook"></i> </a>
-                </div>
-                <div>
-                    <p>Made with ♥ & ♫ by <a href="https://adityapandey.netlify.app/" target="_blank"> Aditya Pandey</a>
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="section-2">
+        <div class="section-3">
+          <div class="logo">
+            Check On : <span><i class="fab fa-youtube"></i> YouTube</span>
+          </div>
+          <div class="sub">
+            <div
+              class="g-ytsubscribe"
+              data-channelid="UCmIkhdsFMxDZ6Imipjr4rwA"
+              data-layout="full"
+              data-theme="dark"
+              data-count="default"
+            ></div>
+          </div>
+          <div class="playlist">
+            <span>
+              <i class="fas fa-angle-double-right"></i>
+              <a
+                href="https://www.youtube.com/playlist?list=PLP9OVTwyJkxVOmAERFFzmeRaBrfnm0Bc-"
+                >KARMA 1 | 0 EXPECTATION
+              </a></span
+            ><br />
+            <span>
+              <i class="fas fa-angle-double-right"></i>
+              <a
+                href="https://www.youtube.com/playlist?list=PLP9OVTwyJkxWDOqD6dDuaVkVVyvzIDANc"
+              >
+                SINGLE TRACKS</a
+              ></span
+            >
+          </div>
         </div>
+        <div class="section-4">
+          <div class="icon">
+            <a
+              href="https://www.instagram.com/insane_the_rapper_/"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/insanetherapper94/"
+              target="_blank"
+              ><i class="fab fa-facebook"></i>
+            </a>
+          </div>
+          <div>
+            <p>
+              Made with ♥ & ♫ by
+              <a href="https://adityapandey.netlify.app/" target="_blank">
+                Aditya Pandey</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <script>
-        if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function() {
-            navigator.serviceWorker
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker
             .register("/serviceWorker.js")
-            .then(res => console.log("service worker registered"))
-            .catch(err => console.log("service worker not registered", err))
-        })
-    }
+            .then((res) => console.log("service worker registered"))
+            .catch((err) => console.log("service worker not registered", err));
+        });
+      }
     </script>
     <script src="play.js"></script>
-<script src="https://apis.google.com/js/platform.js"></script>
-</body>
-
+    <script src="https://apis.google.com/js/platform.js"></script>
+  </body>
 </html>
